@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvx:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Toolbox.Core.Forms.Views.LoginView"
+                    xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                    Title="Main">
+    <ContentPage.Content>
+        <Grid >
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label Text="Username" />
+                <Entry Text="{Binding Username, Mode=TwoWay}"></Entry>
+                <Label Text="Password" />
+                <Entry x:Name="Password" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" />
+                <Button Text="Login" Command="{Binding LoginCommand}" />
+                <Label x:Name="MessageLabel" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</mvx:MvxContentPage>
