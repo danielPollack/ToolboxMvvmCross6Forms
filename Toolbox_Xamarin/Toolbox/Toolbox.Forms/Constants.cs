@@ -6,9 +6,9 @@ namespace Toolbox.Core.Forms
 {
     public static class Constants
     {
-        public const string BaseAPiUrl = " https://testcamfid.clubassist.com";
-        public const string LoginAuthApiUrl = "/Token";
-        public const string TechSvcBulletinsApiUrl = "/API/Toolbox/GetTechnicalServiceBulletins";
+        public const string BaseAPiUrl = " URL";
+        public const string LoginAuthApiUrl = "/TokenString";
+        public const string TechSvcBulletinsApiUrl = "/URL2";
 
 
 
